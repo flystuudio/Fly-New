@@ -221,6 +221,10 @@ span {
     transform: scale(1.02);
 }
 
+.admin .btn {
+    margin-right: 20px;
+}
+
 .admin-box h3 {
     font-size: 2.6rem;
 }
@@ -228,6 +232,7 @@ span {
 .admin-box p {
     font-size: 2rem;
     margin: 1rem 0 3rem;
+    margin-right: 10px;
 }
 
 .portfolio {
