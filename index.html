@@ -18,7 +18,7 @@
     
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">FLY.Studio</a>
+        <a href="#" class="logo">Portfolio</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -135,16 +135,16 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formsubmit.co/flystudio79@gmail.com" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" required placeholder="Full Name">
+                <input type="email" name="email" required placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="number" required placeholder="Mobile Number">
+                <input type="text" name="subject" required placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+            <textarea name="" id="" cols="30" rows="10" name="msg" required placeholder="Your Massage"></textarea>
             <input type="submit" value="Send Massage" class="btn">
         </form>
     </section>
@@ -166,24 +166,6 @@
 
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- email Send -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "flystudio79@gmail.com",
-                Password : "flystudio2020",
-                To : 'zakyabdurt@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Email From flystudioweb",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
