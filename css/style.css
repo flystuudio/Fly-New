@@ -472,7 +472,7 @@ span {
     }
 
     .admin-container {
-        width: fit-content;
+        width: min-content;
     }
 
     .admin h2 {
