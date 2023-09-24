@@ -519,6 +519,19 @@ span {
         width: 90vw;
     }
 
+    .admin h3 {
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .admin p {
+        margin-right: 10px;
+    }
+
+    .admin .btn {
+        margin-right: 100px;
+    }
+
     .admin-box {
         width: 95vw;
     }
