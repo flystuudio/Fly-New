@@ -135,7 +135,7 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false;">
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Address">
@@ -166,6 +166,24 @@
 
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- email Send -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "flystudio79@gmail.com",
+                Password : "flystudio2020",
+                To : 'zakyabdurt@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Email From flystudioweb",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
