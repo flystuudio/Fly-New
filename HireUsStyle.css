@@ -85,7 +85,7 @@ span {
 }
 
 .input-box h1 {
-    margin-left: 280px;
+    text-align: center;
 }
 
 .input-box {
@@ -94,6 +94,17 @@ span {
 
 .input-box .date {
     width: 50px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-box h1 {
+    margin-bottom: 10px; /* Jarak antara h1 dan input */
 }
 
 .terms {
@@ -377,10 +388,14 @@ span {
 }
 
 @media (max-width: 375px) {
-    .input-box h1 {
-        justify-content: center;
+    .project-box {
+        flex-direction: column; /* Menyusun elemen secara vertikal */
         align-items: center;
-        margin-left: 120px;
+    }
+
+    .project-box h1 {
+        text-align: center; /* Pusatkan teks h1 */
+        margin-left: 20px;
     }
 }
 
