@@ -218,6 +218,10 @@ span {
     justify-content: center;
 }
 
+.buttons a {
+    color: #fff;
+}
+
 .btn {
     display: inline-block;
     margin-left: 2rem;
