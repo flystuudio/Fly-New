@@ -485,6 +485,10 @@ span {
         width: min-content;
     }
 
+    .admin-box {
+        width: 90vw;
+    }
+
     .admin h2 {
         margin-bottom: 3rem;
     }
