@@ -420,4 +420,20 @@ span {
         text-align: center;
         margin-left: 30px;
     }
+
+        .terms-box {
+        margin-top: 50vw;
+        height: 500px;
+    }
+
+    .terms-text {
+        padding: 0 20px;
+        height: 300px;
+        margin-top: 0;
+        top: 0;
+        overflow-y: auto;
+        font-size: 14px;
+        font-weight: 300;
+        color: #f1f1f1;
+    }
 }
